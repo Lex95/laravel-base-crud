@@ -1,1 +1,9 @@
-//
+.container-flex {
+    display: flex;
+}
+.item {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
