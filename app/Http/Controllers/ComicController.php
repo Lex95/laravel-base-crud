@@ -40,7 +40,7 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         $newComicData = $request->all();
-
+        var_dump($newComicData);
         $newComic = new Comic;
 
         $newComic->fill($newComicData);
