@@ -3,6 +3,10 @@
 @section('page_title', 'Pagina Aggiunta Fumetti')
 
 @section('content')
+
+<a href="{{ route('comics.index') }}">Indietro</a>
+
+@include('partials.errorsAlert')
     
 <form action="{{ route("comics.store") }}" method="post">
     @csrf
