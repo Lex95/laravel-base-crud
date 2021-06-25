@@ -13,5 +13,6 @@
 <p>{{$comic->series}}</p>
 <p>{{$comic->sale_date}}</p>
 <p>{{$comic->type}}</p>
+<a href="{{ route("comics.edit", $comic) }}">Modifica</a>
 
 @endsection
