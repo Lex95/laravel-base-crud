@@ -13,7 +13,7 @@
             <img src="{{ $comic->thumb }}" alt="">
             <p>{{ $comic->series }}</p>
             <a href="{{ route("comics.edit", $comic) }}">Modifica</a>
-            <form action="{{ route("comics.destroy", $comic) }}" method="post">
+            <form action="{{ route("comics.destroy", $comic) }}" method="post" class="delete-form">
                 @csrf
 
                 @method('DELETE')
